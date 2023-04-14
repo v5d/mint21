@@ -1,0 +1,18 @@
+#!/bin/bash
+
+iptables-restore < /etc/iptables.v4
+chmod o+w /sys/class/backlight/intel_backlight/brightness
+
+#rmmod rtsx_usb_sdmmc rtsx_usb_ms  rtsx_usb memstick nf_conntrack_netbios_ns nf_conntrack_broadcast nf_nat_ftp nf_conntrack_ftp nf_nat snd_seq_midi snd_seq_midi_event snd_seq snd_rawmidi snd_seq_device btusb btintel btbcm btrtl bnep rfcomm  ecdh_generic  bluetooth algif_skcipher af_alg nls_iso8859_1 kvm irqbypass joydev btrfs kvm_intel kvm irqbypass coretemp
+#rmmod intel_lpss_pci intel_lpss
+#rm snd*
+#rmmod snd_soc_skl snd_soc_skl_ipc  snd_soc_sst_dsp  snd_soc_sst_ipc  snd_soc_acpi snd_soc_core  snd_hda_ext_core  snd_pcm_dmaengine ac97_bus snd_compress
+
+#rmmod dm_mirror dm_region_hash dm_log shpchp sdhci_pci sdhci
+
+
+ln -sf /dev/null /home/fred/.xsession-errors
+ln -sf /dev/null /home/fred/.xsession-errors.old
+
+
+exit 0
